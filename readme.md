@@ -10,7 +10,7 @@ Usually, you would set `overflow: hidden` to body when the modal mounts. However
 As an example, compare [Semantic UI's Modal](http://semantic-ui.com/modules/modal.html) and [TWBS' Modal](http://getbootstrap.com/javascript/#modals). TWBS solved this by adding a `padding-right` to the `body` when the modal mounts.
 
 ### Usage
-```
+```js
 // API: `compensate(...elements)`
 compensate('.modal-open', '.overlay-enabled .global-nav');
 ```
