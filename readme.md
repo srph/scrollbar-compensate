@@ -1,16 +1,16 @@
-## scrollbar-compensate [![npm version](http://img.shields.io/npm/v/scrollbar-compensate.svg?style=flat)](https://npmjs.org/package/scrollbar-compensate)
+# scrollbar-compensate [![npm version](http://img.shields.io/npm/v/scrollbar-compensate.svg?style=flat)](https://npmjs.org/package/scrollbar-compensate)
 ```
 npm i scrollbar-compensate
 ```
 A hack to compensate for scrollbar size for modals
 
-### Problem
+## Problem
 Usually, you would set `overflow: hidden` to body when the modal mounts. However, this causes a weird adjustment to the layout (because the scrollbar disappears). This mostly affects Windows/Linux users, and some OSX users that use a mouse (because it forces the scrollbar to appear).
 
 As an example, compare [Semantic UI's Modal](http://semantic-ui.com/modules/modal.html) and [TWBS' Modal](http://getbootstrap.com/javascript/#modals). TWBS solved this by adding a `padding-right` to the `body` when the modal mounts.
 
 ## What It Does
-It adds an inline-style that adds a `padding-right` to the provided selectors. It append the following to `head`:
+It adds an inline-style that adds a `padding-right` to the provided selectors. It appends the following to `head`:
 
 ```html
 <style>.my-selector, .my-selector-2 .my-nested-selector { padding-right: 15px; }</style>
@@ -18,16 +18,18 @@ It adds an inline-style that adds a `padding-right` to the provided selectors. I
 
 Take note that the `15px` value here may vary depending on your scrollbar width. Typically, OS X has this set to `15px`.
 
-### Usage
+## Usage
 ```js
-// API: `compensate(...elements)`
+var compensate = require('scrollbar-compensate');
 compensate('.modal-open', '.overlay-enabled .global-nav');
 ```
 
-### Alternatives
+`compensate(element1, element2, ...elementN)` &mdash; This module only exposes a single function that accepts elements as arguments.
+
+## Alternatives
 [no-scroll](https://github.com/davidtheclark/no-scroll) also solves this problem, however covers more than scrollbar compensation.
 
 Use this library only if you want the scrollbar compensation library. Otherwise, check the alternatives.
 
-### Note
+## Note
 This library isn't available in UMD, but I don't really need it at the moment. Please send a PR or submit an issue if you'd like it to be implemented. Moreover, no tests yet.
