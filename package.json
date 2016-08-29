@@ -1,0 +1,21 @@
+{
+  "name": "scrollbar-compensate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mochify",
+    "build": "browserify -s compensate index.js > test/demo.js",
+    "start": "npm run build && open test/demo.html"
+  },
+  "keywords": [],
+  "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.toarray": "^4.4.0",
+    "scrollbar-size": "^1.0.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}
