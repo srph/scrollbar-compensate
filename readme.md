@@ -9,6 +9,15 @@ Usually, you would set `overflow: hidden` to body when the modal mounts. However
 
 As an example, compare [Semantic UI's Modal](http://semantic-ui.com/modules/modal.html) and [TWBS' Modal](http://getbootstrap.com/javascript/#modals). TWBS solved this by adding a `padding-right` to the `body` when the modal mounts.
 
+## What It Does
+It adds an inline-style that adds a `padding-right` to the provided selectors. It append the following to `head`:
+
+```html
+<style>.my-selector, .my-selector-2 .my-nested-selector { padding-right: 15px; }</style>
+```
+
+Take note that the `15px` value here may vary depending on your scrollbar width. Typically, OS X has this set to `15px`.
+
 ### Usage
 ```js
 // API: `compensate(...elements)`
