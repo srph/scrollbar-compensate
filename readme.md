@@ -1,4 +1,4 @@
-## scrollbar-compensate
+## scrollbar-compensate [![npm version](http://img.shields.io/npm/v/scrollbar-compensate.svg?style=flat)](https://npmjs.org/package/scrollbar-compensate)
 ```
 npm i scrollbar-compensate
 ```
