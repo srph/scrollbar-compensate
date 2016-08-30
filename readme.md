@@ -24,7 +24,7 @@ var compensate = require('scrollbar-compensate');
 compensate('.modal-open', '.overlay-enabled .global-nav');
 ```
 
-`compensate(element1, element2, ...elementN)` &mdash; This module only exposes a single function that accepts elements as arguments.
+`compensate(selector1, selector2, ...selectorN)` &mdash; This module only exposes a single function that accepts elements as arguments.
 
 ## Alternatives
 [no-scroll](https://github.com/davidtheclark/no-scroll) also solves this problem, however covers more than scrollbar compensation.
