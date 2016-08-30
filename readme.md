@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
 Use this library only if you want the scrollbar compensation library. Otherwise, check the alternatives.
 
 ## Note
-This library isn't available in UMD, but I don't really need it at the moment. Please send a PR or submit an issue if you'd like it to be implemented. Moreover, no tests yet.
+This library isn't available in UMD because I don't really need it at the moment. Please send a PR or submit an issue if you'd like it to be implemented. Moreover, no tests yet.
