@@ -1,7 +1,7 @@
 {
   "name": "scrollbar-compensate",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A hack to compensate for scrollbar size for modals",
   "main": "index.js",
   "scripts": {
     "test": "mochify",
@@ -9,6 +9,10 @@
     "start": "npm run build && open test/demo.html"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srph/scrollbar-compensate"
+  },
   "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
   "license": "ISC",
   "dependencies": {
