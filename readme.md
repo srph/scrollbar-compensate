@@ -19,12 +19,17 @@ It adds an inline-style that adds a `padding-right` to the provided selectors. I
 Take note that the `15px` value here may vary depending on your scrollbar width. Typically, OS X has this set to `15px`.
 
 ## Usage
+`compensate(selector1, selector2, ...selectorN)` &mdash; This module only exposes a single function that accepts elements as arguments.
+
 ```js
 var compensate = require('scrollbar-compensate');
-compensate('.modal-open', '.overlay-enabled .global-nav');
+
+document.addEventListener('DOMContentLoaded', function() {
+  compensate('.modal-open', '.overlay-enabled .global-nav');
+});
 ```
 
-`compensate(selector1, selector2, ...selectorN)` &mdash; This module only exposes a single function that accepts elements as arguments.
+**Note** — If you're wondering why it's necessary to run `compensate` when the document loads: We're using the [`scrollbar-size`](https://www.npmjs.com/package/scrollbar-size) library internally which needs to be called after the document is ready.
 
 ## Alternatives
 [no-scroll](https://github.com/davidtheclark/no-scroll) also solves this problem, however covers more than scrollbar compensation.
