@@ -16,7 +16,6 @@
   "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
   "license": "ISC",
   "dependencies": {
-    "lodash.toarray": "^4.4.0",
     "scrollbar-size": "^1.0.4"
   },
   "devDependencies": {
