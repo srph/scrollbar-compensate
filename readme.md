@@ -19,13 +19,13 @@ It adds an inline-style that adds a `padding-right` to the provided selectors. I
 Take note that the `15px` value here may vary depending on your scrollbar width. Typically, OS X has this set to `15px`.
 
 ## Usage
-`compensate(selector1, selector2, ...selectorN)` &mdash; This module only exposes a single function that accepts elements as arguments.
+`compensate(selectors)` &mdash; This module only exposes a single function that accepts an array of elements as *an* argument.
 
 ```js
 var compensate = require('scrollbar-compensate');
 
 document.addEventListener('DOMContentLoaded', function() {
-  compensate('.modal-open', '.overlay-enabled .global-nav');
+  compensate(['.modal-open', '.overlay-enabled .global-nav']);
 });
 ```
 
