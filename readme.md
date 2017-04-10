@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 **Note** — If you're wondering why it's necessary to run `compensate` when the document loads: We're using the [`scrollbar-size`](https://www.npmjs.com/package/scrollbar-size) library internally which needs to be called after the document is ready.
 
+## Examples
+[jquery-modal](https://github.com/srph/jquery-modal) is using this library.
+
 ## Alternatives
 [no-scroll](https://github.com/davidtheclark/no-scroll) also solves this problem, however covers more than scrollbar compensation.
 
