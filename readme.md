@@ -19,7 +19,7 @@ It adds an inline-style that adds a `padding-right` to the provided selectors. I
 Take note that the `15px` value here may vary depending on your scrollbar width. Typically, OS X has this set to `15px`.
 
 ## Usage
-`compensate(selectors)` &mdash; This module only exposes a single function that accepts an array of elements as *an* argument.
+`compensate(selectors)` &mdash; This module only exposes a single function that accepts an array of elements as *an* argument. Usually, you pass class names here that are added to the body when a modal mounts.
 
 ```js
 var compensate = require('scrollbar-compensate');
