@@ -1,7 +1,7 @@
 var scrollbar = require('scrollbar-size');
 
 module.exports = function compensate(elements) {
-  if ( !elements.length ) {
+  if (elements == null) {
     throw new Error(
       'You are calling `compensate()` without any argument. ' +
       'You must provide an element!'
