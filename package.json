@@ -1,6 +1,6 @@
 {
   "name": "scrollbar-compensate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A hack to compensate for scrollbar size for modals",
   "main": "index.js",
   "scripts": {
