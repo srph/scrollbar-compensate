@@ -1,4 +1,4 @@
-var scrollbar = require('scrollbar-size');
+var scrollbar = require('scrollbar-size').default;
 
 module.exports = function compensate(elements) {
   if (elements == null) {
