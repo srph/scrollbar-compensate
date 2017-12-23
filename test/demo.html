@@ -2,11 +2,19 @@
 <html>
 <head>
   <title></title>
+  <style>
+    .overlay-enabled {
+      height: 4px;
+      width: 4px;
+      background: red;
+    }
+  </style>
 </head>
 <body>
+  <div class="overlay-enabled"></div>
   <script src="demo.js"></script>
   <script>
-    compensate('.overlay-enabled', 'overlay-enabled .global-nav');
+    compensate(['.overlay-enabled', 'overlay-enabled .global-nav']);
   </script>
 </body>
 </html>
